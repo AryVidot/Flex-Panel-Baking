@@ -21,6 +21,8 @@ body {
   box-sizing: inherit;
 }
 
+/* ===== LAYOUT ===== */
+
 .panels {
   min-height: 100vh;
   overflow: hidden;
@@ -78,6 +80,7 @@ body {
   align-items: center;
 }
 
+/* -- Open Panel -- */
 .panel > *:first-child {
   transform: translateY(-100%);
 }
@@ -105,4 +108,12 @@ body {
 .panel.open {
   flex: 5;
   font-size: 40px;
+}
+
+.sub-panel1 {
+  display: none;
+}
+/* why doesn't this work? */
+.sub-panel2 .sub-panel3 .sub-panel3.sub-panel4.sub-panel5 {
+  display: none;
 }
